@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<item key="selection" value="AveragerThrd"/>
+		<list key="findhistory">
+			<item value="Averagerthrd"/>
+			<item value="start"/>
+			<item value="&quot;SAVING&quot;"/>
+			<item value="balance"/>
+			<item value="SAVING"/>
+			<item value="type"/>
+			<item value="mark"/>
+			<item value="customerName"/>
+			<item value="10000"/>
+			<item value="baseAmount"/>
+			<item value="customerList"/>
+			<item value="plan"/>
+			<item value="dob"/>
+			<item value="password"/>
+			<item value="email"/>
+		</list>
+		<list key="replacehistory">
+			<item value="AveragerThrd"/>
+			<item value="run"/>
+			<item value="AccountTpe.SAVING"/>
+			<item value="2000"/>
+			<item value="&quot;SAVING&quot;"/>
+			<item value="SAVING"/>
+			<item value="&quot;mark&quot; "/>
+			<item value="&quot;mark&quot;"/>
+			<item value="mark"/>
+			<item value="200"/>
+			<item value="10000"/>
+			<item value="custlist"/>
+			<item value="&quot;Gold&quot;"/>
+			<item value="&quot;2000-01-01&quot;"/>
+			<item value="&quot;abc@123&quot;"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="457"/>
+		<item key="DIALOG_Y_ORIGIN" value="344"/>
+		<item key="DIALOG_WIDTH" value="292"/>
+		<item key="DIALOG_HEIGHT" value="402"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+</section>

@@ -1,0 +1,22 @@
+package tester;
+import static utils.DButils.*;
+
+import java.sql.*;
+
+public class Testdbconn {
+
+	public static void main(String[] args) {
+		try (Connection cn =openconn()){
+			
+			System.out.println("conn open"+cn);
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+			
+			
+		}
+ 
+	}
+
+}

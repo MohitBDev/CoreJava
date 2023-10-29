@@ -1,0 +1,48 @@
+package tester;
+
+import static utils.DButils.openconn;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.Scanner;
+
+public class Testdbconn {
+
+	public static void main(String[] args) {
+		try (Scanner sc=new Scanner(System.in);
+				Connection cn = openconn();
+				PreparedStatement pst = cn.prepareStatement("Select *from users where role = ? and  reg_amt > ?");
+
+		) {
+			System.out.println("Enter  Role and Registration Amount :");
+			pst.setString(1, sc.next().toUpperCase());
+			pst.setDouble(2, sc.nextDouble());
+			try(ResultSet rs= pst.executeQuery()){
+				while (rs.next()) {
+					System.out.println("User details ID "+rs.getInt(1)
+					+" Complete Name "+rs.getString(2)+" "
+							+rs.getString(3)+" email "+rs.getString(4)
+					+" reg amount" +rs.getDouble(6)+" reged on "+rs.getDate(7));
+				}
+				
+			}
+			catch(Exception e)
+			
+			{
+				e.printStackTrace();
+				
+			}
+			
+			
+			
+
+			System.out.println("conn open" + cn);
+		} catch (Exception e) {
+			e.printStackTrace();
+
+		}
+
+	}
+
+}
